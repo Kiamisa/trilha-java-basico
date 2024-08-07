@@ -1,5 +1,6 @@
 package com.uema.iphone;
 
+
 public class Celular implements ReprodutorMusical, AparelhoTelefonico, NavegadorInternet {
 
     // Implementação dos métodos de ReprodutorMusical
@@ -49,23 +50,21 @@ public class Celular implements ReprodutorMusical, AparelhoTelefonico, Navegador
     public void atualizarPagina() {
         System.out.println("Página atualizada.");
     }
-
-    // Método principal para testes
     public static void main(String[] args) {
         Celular meuIPhone = new Celular();
 
         // Testando ReprodutorMusical
         meuIPhone.tocar();
         meuIPhone.pausar();
-        meuIPhone.selecionarMusica("Song Title");
+        meuIPhone.selecionarMusica("Basement");
 
         // Testando AparelhoTelefonico
-        meuIPhone.ligar("123456789");
+        meuIPhone.ligar("2345678");
         meuIPhone.atender();
         meuIPhone.iniciarCorreioVoz();
 
         // Testando NavegadorInternet
-        meuIPhone.exibirPagina("https://example.com");
+        meuIPhone.exibirPagina("https://google.com");
         meuIPhone.adicionarNovaAba();
         meuIPhone.atualizarPagina();
     }
